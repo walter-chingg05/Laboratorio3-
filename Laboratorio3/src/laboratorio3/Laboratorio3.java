@@ -16,7 +16,10 @@ public class Laboratorio3 {
      */
     public static void main(String[] args) {
         
-        //todo codigo obtenido se experimentara en este java para no tener que estar enredandonos con distintos archivos al final.
+        Menu M =new Menu();
+       M.setVisible(true);
+       M.setLocationRelativeTo(null);
+      
     }
     
 }
