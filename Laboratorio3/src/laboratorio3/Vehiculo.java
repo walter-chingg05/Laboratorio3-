@@ -25,8 +25,6 @@ Vehiculo(String tipovehiculo,String tiempoingreso,String tiemposalida,Boolean ve
 {
     this.tipovehiculo= tipovehiculo;
     this.vehiculoenparqueadero= vehiculoenparqueadero;
-    //this.tiempoingreso
-    //this.tiemposalida =new ArrayList<Integer>();
     
 }
 
@@ -41,7 +39,7 @@ static ArrayList<String> listaVehiculos=  new ArrayList<String>();
    
 public String vehiculo(String tipovehiculo, String nplaca)
 {
-  // tipo_vehiculo =jComboBoxTIPO.getSelectedItem().toString();
+  
     
         switch (tipovehiculo) {
           
@@ -74,21 +72,13 @@ int posicion=(listaVehiculos.size());
 public int entrada(String hora,String min)
 {
     hora_entrada=((Integer.parseInt(hora)*60)+Integer.parseInt(min));
-    //if (hora_entrada>=360  && hora_entrada<=1320  ) 
-       // {
+    
     tiempoingreso.add(hora+":"+min);
    
    
  
     System.out.println("hora: "+hora_entrada );
-     //}else   
-        //{
-           //  JOptionPane.showMessageDialog(null, "Fuera Del Horario De Funcionamiento");
-//      listaVehiculos.remove(posicion);
-               // placa.remove(posicion);
-//            tiempoingreso.remove(posicion);
-          //  hora_entrada=-1;
-        //}
+    
     return hora_entrada;
 }
  static int hora_salida=0;
@@ -163,12 +153,12 @@ public int buscar(String buscar)
        
         if (indice>=0) {
             System.out.println("se encuentra en "+indice+"eeee"+listaVehiculos.get(indice)+"fff"+placa.get(indice));
-           // vehiculoenparqueadero=true;
+           
             
             return indice;
         } 
         else{
-            //vehiculoenparqueadero=false;
+         
             indice=-1;
          return indice;  
         }
